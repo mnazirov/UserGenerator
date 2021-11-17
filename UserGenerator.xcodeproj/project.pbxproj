@@ -54,14 +54,46 @@
 		CE577FB627451D8600E95E4E /* UserGenerator */ = {
 			isa = PBXGroup;
 			children = (
-				CE577FB727451D8600E95E4E /* AppDelegate.swift */,
-				CE577FB927451D8600E95E4E /* SceneDelegate.swift */,
-				CE577FBB27451D8600E95E4E /* ViewController.swift */,
+				CE577FCC2745219300E95E4E /* Models */,
+				CE577FCD274521A900E95E4E /* Views */,
+				CE577FCE274521B700E95E4E /* Presenters */,
+				CE577FCB2745211400E95E4E /* SupportFiles */,
 				CE577FC027451D8900E95E4E /* Assets.xcassets */,
 				CE577FC227451D8900E95E4E /* LaunchScreen.storyboard */,
-				CE577FC527451D8900E95E4E /* Info.plist */,
 			);
 			path = UserGenerator;
+			sourceTree = "<group>";
+		};
+		CE577FCB2745211400E95E4E /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				CE577FB727451D8600E95E4E /* AppDelegate.swift */,
+				CE577FB927451D8600E95E4E /* SceneDelegate.swift */,
+				CE577FC527451D8900E95E4E /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		CE577FCC2745219300E95E4E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE577FCD274521A900E95E4E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE577FBB27451D8600E95E4E /* ViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CE577FCE274521B700E95E4E /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,7 +308,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 25ZP9J625N;
-				INFOPLIST_FILE = UserGenerator/Info.plist;
+				INFOPLIST_FILE = UserGenerator/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,7 +327,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 25ZP9J625N;
-				INFOPLIST_FILE = UserGenerator/Info.plist;
+				INFOPLIST_FILE = UserGenerator/SupportFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
