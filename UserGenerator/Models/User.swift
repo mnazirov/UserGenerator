@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct Results {
-    let results: User?
+struct Result: Decodable {
+    let results: [User?]
 }
 
 struct User: Decodable {
@@ -29,7 +29,7 @@ struct Name: Decodable {
 struct Location: Decodable {
     let city: String?
     let country: String?
-    let postcode: String
+    let postcode: Int?
 }
 
 struct Login: Decodable {

@@ -14,6 +14,7 @@
 		CE577FC427451D8900E95E4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE577FC227451D8900E95E4E /* LaunchScreen.storyboard */; };
 		CE577FD02745229900E95E4E /* UserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE577FCF2745229900E95E4E /* UserPresenter.swift */; };
 		CE577FD2274527B300E95E4E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE577FD1274527B300E95E4E /* User.swift */; };
+		CE577FD5274532B400E95E4E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE577FD4274532B400E95E4E /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		CE577FC527451D8900E95E4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE577FCF2745229900E95E4E /* UserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPresenter.swift; sourceTree = "<group>"; };
 		CE577FD1274527B300E95E4E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CE577FD4274532B400E95E4E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				CE577FCC2745219300E95E4E /* Models */,
 				CE577FCD274521A900E95E4E /* Views */,
 				CE577FCE274521B700E95E4E /* Presenters */,
+				CE577FD32745326700E95E4E /* Services */,
 				CE577FCB2745211400E95E4E /* SupportFiles */,
 				CE577FC027451D8900E95E4E /* Assets.xcassets */,
 				CE577FC227451D8900E95E4E /* LaunchScreen.storyboard */,
@@ -100,6 +103,14 @@
 				CE577FCF2745229900E95E4E /* UserPresenter.swift */,
 			);
 			path = Presenters;
+			sourceTree = "<group>";
+		};
+		CE577FD32745326700E95E4E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CE577FD4274532B400E95E4E /* NetworkManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE577FD5274532B400E95E4E /* NetworkManager.swift in Sources */,
 				CE577FBC27451D8600E95E4E /* UserViewController.swift in Sources */,
 				CE577FD02745229900E95E4E /* UserPresenter.swift in Sources */,
 				CE577FB827451D8600E95E4E /* AppDelegate.swift in Sources */,
