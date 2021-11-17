@@ -11,7 +11,7 @@ struct NetworkManager {
     
     static let shared = NetworkManager()
     
-    func fetchUser(url: String, complition: @escaping (Result) -> Void) {
+    func fetchUser(url: String, complition: @escaping (User) -> Void) {
         guard let url = URL(string: url) else { return }
         
         URLSession.shared.dataTask(with: url) { (data, _, error) in
@@ -22,7 +22,8 @@ struct NetworkManager {
             guard let data = data else { return }
             
             do {
-                let user = try JSONDecoder().decode(Result.self, from: data)
+                let result = try JSONDecoder().decode(Result.self, from: data)
+                guard let user = result.results.first as? User else { return }
                 complition(user)
             } catch let error {
                 print(error)
