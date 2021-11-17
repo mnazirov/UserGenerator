@@ -9,19 +9,23 @@
 /* Begin PBXBuildFile section */
 		CE577FB827451D8600E95E4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE577FB727451D8600E95E4E /* AppDelegate.swift */; };
 		CE577FBA27451D8600E95E4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE577FB927451D8600E95E4E /* SceneDelegate.swift */; };
-		CE577FBC27451D8600E95E4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE577FBB27451D8600E95E4E /* ViewController.swift */; };
+		CE577FBC27451D8600E95E4E /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE577FBB27451D8600E95E4E /* UserViewController.swift */; };
 		CE577FC127451D8900E95E4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE577FC027451D8900E95E4E /* Assets.xcassets */; };
 		CE577FC427451D8900E95E4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE577FC227451D8900E95E4E /* LaunchScreen.storyboard */; };
+		CE577FD02745229900E95E4E /* UserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE577FCF2745229900E95E4E /* UserPresenter.swift */; };
+		CE577FD2274527B300E95E4E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE577FD1274527B300E95E4E /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE577FB427451D8600E95E4E /* UserGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE577FB727451D8600E95E4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE577FB927451D8600E95E4E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE577FBB27451D8600E95E4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE577FBB27451D8600E95E4E /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		CE577FC027451D8900E95E4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE577FC327451D8900E95E4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE577FC527451D8900E95E4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE577FCF2745229900E95E4E /* UserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPresenter.swift; sourceTree = "<group>"; };
+		CE577FD1274527B300E95E4E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 		CE577FCC2745219300E95E4E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CE577FD1274527B300E95E4E /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -84,7 +89,7 @@
 		CE577FCD274521A900E95E4E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				CE577FBB27451D8600E95E4E /* ViewController.swift */,
+				CE577FBB27451D8600E95E4E /* UserViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -92,6 +97,7 @@
 		CE577FCE274521B700E95E4E /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				CE577FCF2745229900E95E4E /* UserPresenter.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -165,8 +171,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE577FBC27451D8600E95E4E /* ViewController.swift in Sources */,
+				CE577FBC27451D8600E95E4E /* UserViewController.swift in Sources */,
+				CE577FD02745229900E95E4E /* UserPresenter.swift in Sources */,
 				CE577FB827451D8600E95E4E /* AppDelegate.swift in Sources */,
+				CE577FD2274527B300E95E4E /* User.swift in Sources */,
 				CE577FBA27451D8600E95E4E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
