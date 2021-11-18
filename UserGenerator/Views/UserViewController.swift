@@ -24,5 +24,20 @@ class UserViewController: UIViewController, UserPresenterDelegate {
     func presentUser(user: User) {
         self.user = user
     }
+    
+    private func setNavigavionBar() {
+        navigationController?.navigationBar.prefersLargeTitles = true
+        title = "Fake persone"
+            
+        navigationItem.rightBarButtonItem = UIBarButtonItem(
+            barButtonSystemItem: .refresh,
+            target: self,
+            action: #selector(addNewTask)
+        )
+    }
+        
+    @objc private func addNewTask() {
+        userPresenter.getUsers()
+    }
 }
 
