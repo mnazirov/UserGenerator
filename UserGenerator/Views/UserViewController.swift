@@ -74,7 +74,7 @@ class UserViewController: UIViewController, UserPresenterDelegate {
             }
         }
         
-        firstNameLabel.text = "Name: \(user?.name?.first ?? "Unknown")"
+        firstNameLabel.text = "First name: \(user?.name?.first ?? "Unknown")"
         lastNameLabel.text = "Last name: \(user?.name?.last ?? "Unknown")"
         gender.text = "Gender: \(user?.gender ?? "Unknown")"
         city.text = "City: \(user?.location?.city ?? "Unknown")"
