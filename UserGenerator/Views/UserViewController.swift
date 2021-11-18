@@ -41,6 +41,7 @@ class UserViewController: UIViewController, UserPresenterDelegate {
         userPresenter.getUsers()
         
         setNavigavionBar()
+        setupLayout()
     }
     
     func presentUser(user: User) {
@@ -85,6 +86,28 @@ class UserViewController: UIViewController, UserPresenterDelegate {
         
         view.setNeedsLayout()
     }
+    
+    private func setupLayout() {
+            
+            let stackView = UIStackView(arrangedSubviews: [photoImageView, firstNameLabel,
+                                                           lastNameLabel, gender, city, country,
+                                                           postcode, email, username, password, phone])
+            stackView.spacing = 15
+            stackView.axis = .vertical
+            stackView.alignment = .leading
+            stackView.setCustomSpacing(30, after: photoImageView)
+            stackView.translatesAutoresizingMaskIntoConstraints = false
+            view.addSubview(stackView)
+            
+            NSLayoutConstraint.activate([
+                photoImageView.heightAnchor.constraint(equalToConstant: 200),
+                photoImageView.widthAnchor.constraint(equalToConstant: 200),
+                
+                stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
+                stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+                stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            ])
+        }
     
     @objc private func addNewTask() {
         userPresenter.getUsers()
