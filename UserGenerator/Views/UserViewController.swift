@@ -48,6 +48,7 @@ class UserViewController: UIViewController, UserPresenterDelegate {
         self.user = user
     }
     
+    // MARK: - Private methods
     private func setNavigavionBar() {
         navigationController?.navigationBar.prefersLargeTitles = true
         title = "Fake persone"
