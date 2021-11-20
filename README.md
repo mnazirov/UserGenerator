@@ -1,5 +1,5 @@
 ## Description
-Приложение для случайной генерации имени, фамилии, отчества, контактных и другие данных. 
+Application for random generation of name, surname, patronymic, contact and other data.. 
 - API connected [randomuser.me/api/](https://randomuser.me/api/)
 - The MVP architecture was used
 
