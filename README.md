@@ -1,5 +1,5 @@
 ## Description
-Application for random generation of name, surname, patronymic, contact and other data.. 
+Application for random generation of name, surname, patronymic, contact and other data. 
 - API connected [randomuser.me/api/](https://randomuser.me/api/)
 - The MVP architecture was used
 
