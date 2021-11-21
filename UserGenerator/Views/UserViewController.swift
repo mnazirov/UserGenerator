@@ -36,7 +36,7 @@ class UserViewController: UIViewController, UserPresenterDelegate {
         setupLayout()
     }
     
-    func presentUser(user: User) {
+    func update(with user: User) {
         let user = user
         
         if let url = user.picture?.large {

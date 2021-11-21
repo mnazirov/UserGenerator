@@ -8,7 +8,7 @@
 import UIKit
 
 protocol UserPresenterDelegate: AnyObject {
-    func presentUser(user: User)
+    func update(with user: User)
 }
 
 typealias PresenterDelegate = UserPresenterDelegate & UIViewController
@@ -19,7 +19,7 @@ class UserPresenter {
         
     public func getUsers() {
         NetworkManager.shared.fetchUser(url: "https://randomuser.me/api/") { user in
-            self.delegate?.presentUser(user: user)
+            self.delegate?.update(with: user)
         }
     }
     
