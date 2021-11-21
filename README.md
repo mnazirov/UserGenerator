@@ -12,5 +12,5 @@ Application for random generation of name, surname, patronymic, contact and othe
 
 
 ## Preview
-![Alt-текст](https://github.com/mnazirov/UserGenerator/blob/fcc956f1a3f81697358e3910a1a1661f0f3019d9/Sourses/Preview.gif "Орк")
+![Alt-текст](https://github.com/mnazirov/UserGenerator/blob/0e54cf94bd495db89c2d9f3f6790555ae04b2519/Resources/Preview.gif "Орк")
 
