@@ -46,6 +46,7 @@ class UserViewController: UIViewController, UserPresenterDelegate {
             self.userView.phone.text = "Phone: \(user.phone ?? "Unknown")"
             
             self.view.setNeedsLayout()
+            self.userView.activityIndicator.stopAnimating()
         }
     }
     
@@ -62,6 +63,7 @@ class UserViewController: UIViewController, UserPresenterDelegate {
     }
     
     @objc private func addNewTask() {
+        userView.activityIndicator.startAnimating()
         userPresenter.getUsers()
     }
 }

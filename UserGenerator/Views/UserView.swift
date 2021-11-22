@@ -22,6 +22,7 @@ class UserView: UIView {
     let username = UILabel()
     let password = UILabel()
     let phone = UILabel()
+    let activityIndicator = UIActivityIndicatorView(style: .large)
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -35,6 +36,12 @@ class UserView: UIView {
     }
     
     private func setupLayout() {
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.startAnimating()
+        activityIndicator.color = .black
+        activityIndicator.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(activityIndicator)
+        
         photoImageView.backgroundColor = .systemGray2
         photoImageView.layer.cornerRadius = 100
         photoImageView.clipsToBounds = true
@@ -50,6 +57,11 @@ class UserView: UIView {
         addSubview(stackView)
         
         NSLayoutConstraint.activate([
+            activityIndicator.widthAnchor.constraint(equalToConstant: 100),
+            activityIndicator.heightAnchor.constraint(equalToConstant: 100),
+            activityIndicator.centerXAnchor.constraint(equalTo: centerXAnchor),
+            activityIndicator.centerYAnchor.constraint(equalTo: centerYAnchor),
+            
             photoImageView.heightAnchor.constraint(equalToConstant: 200),
             photoImageView.widthAnchor.constraint(equalToConstant: 200),
             
