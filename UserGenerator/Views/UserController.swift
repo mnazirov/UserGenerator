@@ -53,7 +53,7 @@ class UserViewController: UIViewController, UserPresenterDelegate {
     // MARK: - Private methods
     private func setNavigavionBar() {
         navigationController?.navigationBar.prefersLargeTitles = true
-        title = "Fake persone"
+        title = "Fake person"
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(
             barButtonSystemItem: .refresh,
