@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE2DB363274A6FD200A7FB63 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2DB362274A6FD200A7FB63 /* UserView.swift */; };
 		CE577FB827451D8600E95E4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE577FB727451D8600E95E4E /* AppDelegate.swift */; };
 		CE577FBA27451D8600E95E4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE577FB927451D8600E95E4E /* SceneDelegate.swift */; };
 		CE577FBC27451D8600E95E4E /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE577FBB27451D8600E95E4E /* UserViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE2DB362274A6FD200A7FB63 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		CE577FB427451D8600E95E4E /* UserGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE577FB727451D8600E95E4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE577FB927451D8600E95E4E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				CE577FBB27451D8600E95E4E /* UserViewController.swift */,
+				CE2DB362274A6FD200A7FB63 /* UserView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				CE577FB827451D8600E95E4E /* AppDelegate.swift in Sources */,
 				CE577FD2274527B300E95E4E /* User.swift in Sources */,
 				CE577FBA27451D8600E95E4E /* SceneDelegate.swift in Sources */,
+				CE2DB363274A6FD200A7FB63 /* UserView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
