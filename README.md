@@ -9,6 +9,7 @@ Application for random generation of name, surname, patronymic, contact and othe
 - [X] Created a network manager
 - [X] Created a presenter
 - [X] Configured the layout of the UI elements
+- [X] Added an Activity Indicator
 
 
 ## Preview
