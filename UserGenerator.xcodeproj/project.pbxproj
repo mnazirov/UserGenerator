@@ -10,7 +10,7 @@
 		CE2DB363274A6FD200A7FB63 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2DB362274A6FD200A7FB63 /* UserView.swift */; };
 		CE577FB827451D8600E95E4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE577FB727451D8600E95E4E /* AppDelegate.swift */; };
 		CE577FBA27451D8600E95E4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE577FB927451D8600E95E4E /* SceneDelegate.swift */; };
-		CE577FBC27451D8600E95E4E /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE577FBB27451D8600E95E4E /* UserController.swift */; };
+		CE577FBC27451D8600E95E4E /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE577FBB27451D8600E95E4E /* UserViewController.swift */; };
 		CE577FC127451D8900E95E4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE577FC027451D8900E95E4E /* Assets.xcassets */; };
 		CE577FC427451D8900E95E4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE577FC227451D8900E95E4E /* LaunchScreen.storyboard */; };
 		CE577FD02745229900E95E4E /* UserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE577FCF2745229900E95E4E /* UserPresenter.swift */; };
@@ -23,7 +23,7 @@
 		CE577FB427451D8600E95E4E /* UserGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE577FB727451D8600E95E4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE577FB927451D8600E95E4E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE577FBB27451D8600E95E4E /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		CE577FBB27451D8600E95E4E /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		CE577FC027451D8900E95E4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE577FC327451D8900E95E4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE577FC527451D8900E95E4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 		CE577FCD274521A900E95E4E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				CE577FBB27451D8600E95E4E /* UserController.swift */,
+				CE577FBB27451D8600E95E4E /* UserViewController.swift */,
 				CE2DB362274A6FD200A7FB63 /* UserView.swift */,
 			);
 			path = Views;
@@ -186,7 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE577FD5274532B400E95E4E /* NetworkManager.swift in Sources */,
-				CE577FBC27451D8600E95E4E /* UserController.swift in Sources */,
+				CE577FBC27451D8600E95E4E /* UserViewController.swift in Sources */,
 				CE577FD02745229900E95E4E /* UserPresenter.swift in Sources */,
 				CE577FB827451D8600E95E4E /* AppDelegate.swift in Sources */,
 				CE577FD2274527B300E95E4E /* User.swift in Sources */,
